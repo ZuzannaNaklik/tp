@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+<title>Układ</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="styl1.css">
+</head>
+<body style="background-color: rgb(0, 0, 0); color: white; height: 100%"></body>
+
+<div id="kalendarz"></div>
+<script>
+    const kalendarz = document.getElementById('kalendarz');
+  	const data = new Date();
+  	let dzien = data.getDate();
+    let miesiac = data.getMonth() + 1;
+  	let rok = data.getFullYear();
+  kalendarz.innerHTML = dzien + "-" + miesiac + "-" + rok;
+  pobierzCzas();
+</script>
+<div id="zegar"></div>
+<script>
+    const pobierzCzas = () => {
+      	const data = new Date();
+        let godzina = data.getHours();
+        let minuta = data.getMinutes();
+        let sekunda = data.getSeconds();
+        zegar.innerHTML = godzina + ":" + minuta + ":" + sekunda;}
+    const zegar = document.getElementById('zegar');
+  const interval = setInterval(pobierzCzas,1000);
+</script>
+    
+<footer>
+    <p style="font-size: 18px;">•._.••´¯``•.¸¸.•` ❁❁❁✺✳✽✻✩✱✽֍✫✸֍✵✼❃✼✳☆֎֎☆✻❁❄✶✮✶✩✦❀ `•.¸¸.•´´¯`••._.•</p>
+    </footer>
+    
+<div class="container">
+    <div style="padding-right: 50px;">
+        <section>
+        <article>
+        <h3>
+            <a href=".html" button class="button"><span>1𝓣𝓟</span><span>&#11166;</span></button></a></h3>
+        </article>
+        </section>
+    </div>
+    <div style=" padding-left: 50px;">
+        <section>
+        <article>
+        <h3>
+            <a href=".html" button class="button"><span>2𝓣𝓟</span><span>&#11166;</span></button></a></h3>
+        </article>
+        </section></div>
+ 
+<header>
+</header>
+</div>
+
+<footer>
+<p>𝖅𝖚𝖟𝖆𝖓𝖓𝖆𝕹𝖆𝖐𝖑𝖎𝖈𝖐𝖆</p>
+</footer>
+
+</body>
+</html>
