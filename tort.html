@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+<title>Układ</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="styltort.css">
+</head>
+<body>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+  const candles = document.querySelectorAll('.candle');
+
+  candles.forEach(candle => {
+    candle.addEventListener('click', function() {
+      const url = this.getAttribute('href');
+
+      window.location.href = url;
+    });
+  });
+});
+
+</script>
+    <div class="container">
+        <div class="cake">
+
+            <a href="https://www.example.com" class="candle1">
+                <div class="candle1-flame flame"></div>
+              </a>
+
+              <a href="https://www.example.com" class="candle2">
+                <div class="candle2-flame flame"></div>
+              </a>
+
+              <a href="https://www.example.com" class="candle3">
+                <div class="candle3-flame flame"></div>
+              </a>
+              <a href="https://www.example.com" class="candle4">
+                <div class="candle4-flame flame"></div>
+              </a>
+    </div></div>
+
+</body>
