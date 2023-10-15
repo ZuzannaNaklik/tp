@@ -13,6 +13,11 @@
     border: 5px solid #0011ff;
     border-radius: 50%;
     position: relative;
+  background-image: url('cakezdj.jpg');
+    background-size: cover; 
+    background-position: center center; 
+    background-repeat: no-repeat; 
+  }
   }
 
 .container {
@@ -25,6 +30,7 @@
   left: 50%;
   border-radius: 20%;
   box-shadow: 10px 20px 45px rgb(255, 255, 255);
+  
 }
 
 
