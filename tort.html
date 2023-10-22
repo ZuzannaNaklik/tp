@@ -1,42 +1,42 @@
 <!DOCTYPE html>
 <html lang="pl-PL">
 <head>
-<title>Układ</title>
 <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TORT</title>
 <link rel="stylesheet" type="text/css" href="styltort.css">
 </head>
 <body>
 <script>
-    document.addEventListener("DOMContentLoaded", function() {
-  const candles = document.querySelectorAll('.candle');
+  
+const toggleButton = document.getElementById("toggleFlame");
+const candles = document.querySelectorAll(".candle");
 
-  candles.forEach(candle => {
-    candle.addEventListener('click', function() {
-      const url = this.getAttribute('href');
-
-      window.location.href = url;
+toggleButton.addEventListener("click", () => {
+    candles.forEach(candle => {
+        if (candle.classList.contains("stopFlame")) {
+            candle.classList.remove("stopFlame");
+        } else {
+            candle.classList.add("stopFlame");
+        }
     });
-  });
 });
 
 </script>
+
     <div class="container">
         <div class="cake">
-
             <a href="https://www.example.com" class="candle1">
-                <div class="candle1-flame flame"></div>
+                <div class="candle1-flame"></div>
               </a>
 
-              <a href="https://www.example.com" class="candle2">
-                <div class="candle2-flame flame"></div>
+              <a href="zycz1.html" class="candle2">
+                <div class="candle2-flame"></div>
               </a>
 
               <a href="https://www.example.com" class="candle3">
-                <div class="candle3-flame flame"></div>
-              </a>
-              <a href="https://www.example.com" class="candle4">
-                <div class="candle4-flame flame"></div>
+                <div class="candle3-flame"></div>
               </a>
     </div></div>
-
 </body>
