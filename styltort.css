@@ -4,8 +4,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  background-color:  #7092BC;
-}
+  background-color:  #7092BC;}
 .cake {
     width: 800px;
     height: 800px;
@@ -14,9 +13,7 @@
     background-image: url('ciastko.png');
     background-size: cover; 
     background-position: center center; 
-    background-repeat: no-repeat; 
-  }
-
+    background-repeat: no-repeat; }
 .container {
   width: 800px;
   height: 800px;
@@ -25,9 +22,7 @@
   transform: translate(-50%, -50%);
   top: 50%;
   left: 50%;
-  border-radius: 20%;
-  
-}
+  border-radius: 20%;}
 .candle1-flame, .candle2-flame, .candle3-flame {
   position: absolute;
   height: 30px;
@@ -37,13 +32,9 @@
   border-radius: 0 50% 50% 50%;
   transform: scale(0) rotate(45deg);
   bottom: 110px;
-  left: -0.5px;
-}
-
+  left: -0.5px;}
 .candle1:hover .candle1-flame, .candle2:hover .candle2-flame, .candle3:hover .candle3-flame {
-  animation: flame 0.5s alternate infinite, enlargeFlame 0.5s forwards, shortFlame 0.5s forwards;
-}
-
+  animation: flame 0.5s alternate infinite, enlargeFlame 0.5s forwards, shortFlame 0.5s forwards;}
 .candle1 {
     background: repeating-linear-gradient(
         45deg,
@@ -53,11 +44,7 @@
     bottom: 600px;
     left: 50%;
     margin-left: -30px;
-    border-radius: 2px 2px 0 0;
-    
-    
-}
-
+    border-radius: 2px 2px 0 0;}
 .candle1:after {
     content: "";
     position: absolute;
@@ -68,29 +55,20 @@
     transform: scale(0) rotate(45deg);
     bottom: 110px;
     left: -0.5px;
-    animation: flame  forwards;
-    
-}
+    animation: flame  forwards;}
 @keyframes flame {
   0% {
     transform: scale(1) rotate(45deg);
-  }
-}
-
+  }}
 .candle1:hover .candle1-flame {
-  animation: enlargeFlame 1s infinite alternate, shortFlame 1s infinite alternate;
-}
-
-
+  animation: enlargeFlame 1s infinite alternate, shortFlame 1s infinite alternate;}
 @keyframes enlargeFlame {
   0% {
     transform: scale(2) rotate(45deg);
   }
   100% {
     transform: scale(1) rotate(45deg);
-  }
-}
-
+  }}
 @keyframes shortFlame {
   0% {
     transform: scale(1) rotate(45deg);
@@ -98,7 +76,6 @@
   100% {
     transform: scale(2) rotate(45deg);
   }}
-
 .candle2 {
     background: repeating-linear-gradient(
         45deg,
@@ -109,9 +86,7 @@
       margin-bottom: 600px;
       margin-left: -175px;
       bottom: 0;
-      border-radius: 2px 2px 0 0;   
-}
-
+      border-radius: 2px 2px 0 0;   }
   .candle2:after {
     content: "";
     position: absolute;
@@ -122,20 +97,13 @@
     transform: scale(0) rotate(45deg);
     bottom: 110px;
     left: -0.5px;
-    animation: flame forwards;
-  }
+    animation: flame forwards;}
   @keyframes flame {
     0% {
       transform: scale(0) rotate(45deg);
-    }
-  }
+    }}
   .candle2:hover .candle2-flame{
-    animation: enlargeFlame 1s infinite alternate, shortFlame 1s infinite alternate;
-  }
-
-
-
-
+    animation: enlargeFlame 1s infinite alternate, shortFlame 1s infinite alternate;}
 .candle3 {
     background: repeating-linear-gradient(
         45deg,
@@ -146,10 +114,7 @@
       margin-bottom: 600px;
       margin-left: 125px;
       bottom: 0;
-      border-radius: 2px 2px 0 0;
-      
-    
-}
+      border-radius: 2px 2px 0 0;}
   .candle3:after {
     content: "";
     position: absolute;
@@ -160,14 +125,11 @@
     transform: scale(0) rotate(45deg);
     bottom: 110px;
     left: -0.5px;
-    animation: flame forwards;
-
-  }
+    animation: flame forwards;}
   @keyframes flame {
     100% {
       transform: scale(1) rotate(45deg);
-    }
-  }
+    }}
   .candle3:hover .candle3-flame{
-    animation: enlargeFlame 1s infinite alternate, shortFlame 1s infinite alternate;
-  }
+    animation: enlargeFlame 1s infinite alternate, shortFlame 1s infinite alternate;}
+  
